@@ -1,0 +1,25 @@
+@charset "UTF-8";
+.app {
+  -webkit-transition: background-color 1.8s, color 1.8s;
+  transition: background-color 1.8s, color 1.8s;
+  /* Agrega esta línea para la transición suave */
+}
+
+.app.light {
+  background-color: white;
+  color: black;
+}
+
+.app.light a {
+  color: black;
+}
+
+.app.dark {
+  background-color: black;
+  color: white;
+}
+
+.app.dark a {
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */

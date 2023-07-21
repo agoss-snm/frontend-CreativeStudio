@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@700&display=swap');
+#code{
+    min-width: 500px;
+    min-height: 500px;
+}
+.containerCreation{
+    min-height: 150vh;
+}
+.becreative{
+    color:rgb(60, 53, 99) !important;
+}
+.center{
+    justify-content: center;
+    display: flex;
+}
+
+.padd{
+    padding: 4vh;
+}
+iframe {
+    border: 0;
+    width: 100%;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+//FORM AI
+.row{
+    --bs-gutter-x: 0rem !important;
+}
+#formAI{
+    display: flex;
+    flex-direction: column;
+    background: #485D54;
+    background: conic-gradient(from 315deg, #ffb4da, #5e66cf);
+}
+.center{
+    display: flex;
+}
+.containerB{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonSendCreateAI{
+    background-color: black;
+    margin: 1vh;
+}
+#inputForm{
+    border-color:black;
+    margin: 1vh;
+}
+
+#titleForm{
+    border-color:black;
+    margin: 1vh;
+}

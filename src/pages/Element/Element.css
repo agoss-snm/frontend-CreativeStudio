@@ -1,0 +1,61 @@
+.altura{
+    min-height: 100vh;
+}
+
+.middle{
+    display: flex;
+    justify-content: center;
+}
+.padd2{
+    padding: 5vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 5vh;
+}
+.subtitle{
+    font-family: 'Shippori Mincho', serif;
+    font-size: 7vh;
+    text-align: center;
+    margin-top: 5vh;
+}
+.linksDetail{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5vh;
+}
+.buttonDetail{
+    padding: 2vh;
+    margin: 2vh;
+    background-color: rgb(196, 196, 196);
+    border:none;
+    border-radius: 10px;
+}
+.colorY{
+    color:rgb(255, 115, 0);
+    font-size: 3vh;
+    margin-bottom: 3vh;
+}
+.alignR{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:self-end;
+}
+
+.btnbackk{
+    background-color: rgb(120, 120, 245);
+}
+.btndelete{
+    background-color: rgb(255, 112, 112);
+}
+.btnEdit{
+    background-color: rgb(248, 248, 97);
+}
+
+.btnHeart{
+    background: none;
+    color: red;
+    font-size: 4vh;
+}

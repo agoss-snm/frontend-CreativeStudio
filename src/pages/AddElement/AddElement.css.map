@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAA;EACF,UAAU,EAAE,GAAG;EACf,OAAO,EAAE,GAAG;EACZ,cAAc,EAAE,MAAM;EACtB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;CAC1B",
+    "sources": [
+        "AddElement.scss"
+    ],
+    "names": [],
+    "file": "AddElement.css"
+}

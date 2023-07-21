@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@700&display=swap");
+#code {
+  min-width: 500px;
+  min-height: 500px;
+}
+
+.containerCreation {
+  min-height: 150vh;
+}
+
+.becreative {
+  color: #3c3563 !important;
+}
+
+.center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.padd {
+  padding: 4vh;
+}
+
+iframe {
+  border: 0;
+  width: 100%;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+
+#formAI {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #485D54;
+  background: conic-gradient(from 315deg, #ffb4da, #5e66cf);
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerB {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#buttonSendCreateAI {
+  background-color: black;
+  margin: 1vh;
+}
+
+#inputForm {
+  border-color: black;
+  margin: 1vh;
+}
+
+#titleForm {
+  border-color: black;
+  margin: 1vh;
+}
+/*# sourceMappingURL=CreateIa.css.map */

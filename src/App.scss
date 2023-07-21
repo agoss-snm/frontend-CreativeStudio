@@ -1,0 +1,99 @@
+@charset "UTF-8";
+.app {
+  -webkit-transition: background-color 1.8s, color 1.8s;
+  transition: background-color 1.8s, color 1.8s;
+  /* Agrega esta línea para la transición suave */
+}
+
+.row{
+  justify-content: center !important;
+}
+#toggleL{
+  width: 5% !important;
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent;
+  opacity: 0.89;
+}
+.app.light {
+  color: rgb(31, 31, 31);
+  background-color:  white;
+}
+
+.app.light a {
+  color: black;
+}
+
+.app.dark {
+  background: #2c2c2c;
+  color: white;
+}
+
+#toggle{
+  padding-top: 3vh;
+  padding-left: 3vh;
+}
+.app.dark a {
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */
+
+@media (max-width: 767px) { 
+  #toggle{
+    margin-left: -5000px;
+  }
+
+}
+
+//
+
+.toggle-scene {
+  overflow: visible !important;
+  height: 20vmin;
+  position: absolute;
+}
+.toggle-scene__cord {
+  stroke: var(--cord);
+  cursor: move;
+}
+.toggle-scene__cord:nth-of-type(1) {
+  display: none;
+}
+.toggle-scene__cord:nth-of-type(2),
+.toggle-scene__cord:nth-of-type(3),
+.toggle-scene__cord:nth-of-type(4),
+.toggle-scene__cord:nth-of-type(5) {
+  display: none;
+}
+.toggle-scene__cord-end {
+  stroke: var(--cord);
+  fill: var(--cord);
+}
+.toggle-scene__dummy-cord {
+  stroke-width: 6;
+  stroke: var(--cord);
+}
+.bulb__filament {
+  stroke: var(--filament);
+}
+.bulb__shine {
+  stroke: var(--shine);
+}
+.bulb__flash {
+  stroke: #f5e0a3;
+  display: none;
+}
+.bulb__bulb {
+  stroke: var(--stroke);
+  fill: hsla(calc(180 - (95 * var(--on))), 80%, 80%, calc(0.1 + (0.4 * var(--on))));
+}
+.bulb__cap {
+  fill: var(--cap);
+}
+.bulb__cap-shine {
+  fill: var(--shine);
+}
+.bulb__cap-outline {
+  stroke: var(--stroke);
+}
+

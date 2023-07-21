@@ -1,0 +1,18 @@
+.app {
+  transition: background-color 1.8s, color 1.8s; /* Agrega esta línea para la transición suave */
+}
+.app.light {
+    background-color: white;
+    color: black;
+    a{
+        color:black;
+    }
+  }
+  
+  .app.dark {
+    background-color: black;
+    color: white;
+    a{
+        color:white;
+    }
+  }

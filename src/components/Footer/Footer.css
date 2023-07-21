@@ -1,0 +1,24 @@
+.footerContainer{
+    min-height:50vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-family: Roboto;
+}
+
+.footerContainer >div{
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+
+.spanFooter{
+    color: yellow;
+}

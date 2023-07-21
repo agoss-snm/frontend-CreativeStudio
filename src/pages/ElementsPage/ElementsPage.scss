@@ -1,0 +1,60 @@
+.elementsP {
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 255, 0), rgba(255, 255, 0, 0.212)), url("../../img/fondo1.jpg");
+    overflow: hidden;
+    border-radius: 50%;
+    max-height: 200px;
+    max-width: 200px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.random-bg {
+    animation-name: random-bg-1, random-bg-2, random-bg-3;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.recover {
+    background: cover;
+    filter: blur(5px);
+}
+
+
+.recover {
+    background: cover;
+}
+
+.titleAdapt {
+    position: relative;
+    top: 0px;
+    right: -50px;
+    color: rgb(20, 20, 20);
+    font-weight:bold;
+    font-size: 3vh;
+    width: 150px;
+    z-index: 22;
+    overflow: visible !important;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+}
+
+.card {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 2vh;
+}
+
+.card-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

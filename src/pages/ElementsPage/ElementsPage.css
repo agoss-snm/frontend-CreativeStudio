@@ -1,0 +1,83 @@
+.elementsP {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 255, 0)), to(rgba(255, 255, 0, 0.212))), url("../../img/fondo1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 255, 0), rgba(255, 255, 0, 0.212)), url("../../img/fondo1.jpg");
+  overflow: hidden;
+  border-radius: 50%;
+  max-height: 200px;
+  max-width: 200px;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.random-bg {
+  -webkit-animation-name: random-bg-1, random-bg-2, random-bg-3;
+          animation-name: random-bg-1, random-bg-2, random-bg-3;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.recover {
+  background: cover;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.recover {
+  background: cover;
+}
+
+.titleAdapt {
+  position: relative;
+  top: 0px;
+  right: -50px;
+  color: #141414;
+  font-weight: bold;
+  font-size: 3vh;
+  width: 150px;
+  z-index: 22;
+  overflow: visible !important;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+}
+
+.card {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2vh;
+}
+
+.card-title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=ElementsPage.css.map */

@@ -1,0 +1,100 @@
+.navbar-container {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: transparent;
+}
+
+
+nav {
+  background-color: #ffffff7e;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  max-height: 5vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#logotype{
+  margin-left: 3vh;
+}
+
+nav ul {
+  flex: 1;
+  text-align: right;
+  padding-right: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ff3131;
+  transition: width 0.4s;
+}
+
+nav ul li a:hover {
+  width: 100%;
+  color: #4e9815;;
+}
+
+.logo {
+  left: 120px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.search {
+  position: fixed;
+  right: 160px;
+}
+
+.menu {
+  position: fixed;
+  right: 100px;
+}
+.black{
+  color:black;
+}
+
+.black >a{
+  color:black;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 0 !important;
+}
+
+.offcanvas-body {
+  font-size: 2.8vh !important;
+  ul>li{
+    padding-top: 2vh;
+  }
+}
+
+#logoutB{
+  color: white;
+  background-color: rgb(59, 59, 59);
+  border: 1px solid orange;
+  padding: 1vh;
+  border-radius: 10px;
+}
+#profileB{
+  color:rgb(255, 115, 0)
+}

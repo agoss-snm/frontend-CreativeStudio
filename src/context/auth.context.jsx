@@ -1,0 +1,88 @@
+import React, { useState, useEffect } from "react";
+import authService from "../services/auth.service";
+
+
+const AuthContext = React.createContext();
+
+function AuthProviderWrapper(props) {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [user, setUser] = useState(null);
+  const [theme, setTheme] = useState("light"); 
+
+  const storeToken = (token) => {
+    localStorage.setItem("authToken", token);
+  };
+
+  const authenticateUser = () => {
+    const storedToken = localStorage.getItem("authToken");
+    if (storedToken) {
+      authService
+        .verify()
+        .then((response) => {
+          // If the server verifies that JWT token is valid  ✅
+          const user = response.data;
+          // Update state variables
+          setIsLoggedIn(true);
+          setIsLoading(false);
+          setUser(user);
+        })
+        .catch((error) => {
+          // If the server sends an error response (invalid token) ❌
+          // Update state variables
+          setIsLoggedIn(false);
+          setIsLoading(false);
+          setUser(null);
+        });
+    } else {
+      // If the token is not available
+      setIsLoggedIn(false);
+      setIsLoading(false);
+      setUser(null);
+    }
+  };
+
+  const removeToken = () => {
+    localStorage.removeItem("authToken");
+  };
+
+  const logOutUser = () => {
+    // Upon logout, remove the token from the localStorage
+    removeToken();
+    authenticateUser();
+  };
+
+  useEffect(() => {
+    // Run this code once the AuthProviderWrapper component in the App loads for the first time.
+    // This effect runs when the application and the AuthProviderWrapper component load for the first time.
+    authenticateUser();
+  }, []);
+
+  useEffect(() => {
+    const body = document.body;
+    if (theme === "dark") {
+      body.classList.add("dark-theme");
+    } else {
+      body.classList.remove("dark-theme");
+    }
+  }, [theme]);
+
+  return (
+    <AuthContext.Provider
+      value={{
+        isLoggedIn,
+        isLoading,
+        user,
+        storeToken,
+        authenticateUser,
+        logOutUser,
+        theme,
+        setTheme,
+      }}
+    >
+      {props.children}
+    </AuthContext.Provider>
+  );
+}
+
+export { AuthProviderWrapper, AuthContext };

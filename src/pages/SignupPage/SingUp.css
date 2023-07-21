@@ -1,0 +1,312 @@
+@charset "UTF-8";
+form {
+  margin-bottom: 3em;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  background-color: #FFF;
+  margin: 0;
+  padding: 2.25em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid 1px #DDD;
+  border-radius: 0.5em;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#signUp {
+  cursor: pointer;
+}
+
+form .inputGroup {
+  margin: 0 0 2em;
+  padding: 0;
+  position: relative;
+}
+
+form .inputGroup:last-of-type {
+  margin-bottom: 0;
+}
+
+form label {
+  margin: 0 0 12px;
+  display: block;
+  font-size: 1.25em;
+  color: #217093;
+  font-weight: 700;
+  font-family: inherit;
+}
+
+form input[type=email], form input[type=text], form input[type=number], form input[type=url], form input[type=search], form input[type=password] {
+  display: block;
+  margin: 0;
+  padding: 0 1em 0;
+  padding: 0.875em 1em 0;
+  background-color: #f3fafd;
+  border: solid 2px #ff7300;
+  border-radius: 4px;
+  --webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 65px;
+  font-size: 1.20em;
+  color: #353538;
+  font-weight: 600;
+  font-family: inherit;
+  -webkit-transition: border-color 0.25s ease-out, -webkit-box-shadow 0.2s linear;
+  transition: border-color 0.25s ease-out, -webkit-box-shadow 0.2s linear;
+  transition: box-shadow 0.2s linear, border-color 0.25s ease-out;
+  transition: box-shadow 0.2s linear, border-color 0.25s ease-out, -webkit-box-shadow 0.2s linear;
+}
+
+form input[type=email]:focus, form input[type=text]:focus, form input[type=number]:focus, form input[type=url]:focus, form input[type=search]:focus, form input[type=password]:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border: solid 2px #ff7300;
+}
+
+form button {
+  display: block;
+  margin: 0;
+  padding: 0.65em 1em 1em;
+  background-color: #ff7300;
+  border: none;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 100%;
+  height: 65px;
+  font-size: 1.55em;
+  color: #FFF;
+  font-weight: 600;
+  font-family: inherit;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+form button:hover, form button:active {
+  background-color: #ff7300;
+}
+
+form .inputGroup1 .helper {
+  position: absolute;
+  z-index: 1;
+  font-family: inherit;
+}
+
+form .inputGroup1 .helper1 {
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(1em, 2.2em) scale(1);
+          transform: translate(1em, 2.2em) scale(1);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  color: #ff7300;
+  font-size: 1.55em;
+  font-weight: 400;
+  opacity: 0.65;
+  pointer-events: none;
+  -webkit-transition: opacity 0.2s linear, -webkit-transform 0.2s ease-out;
+  transition: opacity 0.2s linear, -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, opacity 0.2s linear;
+  transition: transform 0.2s ease-out, opacity 0.2s linear, -webkit-transform 0.2s ease-out;
+}
+
+form .inputGroup1.focusWithText .helper {
+  -webkit-transform: translate(1em, 1.55em) scale(0.6);
+          transform: translate(1em, 1.55em) scale(0.6);
+  opacity: 1;
+}
+
+form .inputGroup2 input[type=password] {
+  padding: 0.4em 1em 0.5em;
+}
+
+form .inputGroup2 input[type=text] {
+  padding: 0.025em 1em 0;
+}
+
+form .inputGroup2 #showPasswordToggle {
+  display: block;
+  padding: 0 0 0 1.45em;
+  position: absolute;
+  top: 0.25em;
+  right: 0;
+  font-size: 1em;
+}
+
+form .inputGroup2 #showPasswordToggle input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+form .inputGroup2 #showPasswordToggle .indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.85em;
+  width: 0.85em;
+  background-color: #f3fafd;
+  border: solid 2px #ff7300;
+  border-radius: 3px;
+}
+
+form .inputGroup2 #showPasswordToggle .indicator:after {
+  content: "";
+  left: 0.25em;
+  top: 0.025em;
+  width: 0.2em;
+  height: 0.5em;
+  border: solid #ff7300;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  visibility: hidden;
+}
+
+form .inputGroup2 #showPasswordToggle input:checked ~ .indicator:after {
+  visibility: visible;
+}
+
+form .inputGroup2 #showPasswordToggle input:focus ~ .indicator, form .inputGroup2 #showPasswordToggle input:hover ~ .indicator {
+  border-color: #ff7300;
+}
+
+form .inputGroup2 #showPasswordToggle input:disabled ~ .indicator {
+  opacity: 0.5;
+}
+
+form .inputGroup2 #showPasswordToggle input:disabled ~ .indicator:after {
+  visibility: hidden;
+}
+
+.bottomPageLogin {
+  position: relative;
+  margin-top: 2em;
+}
+
+.bottomPageLogin .darkp {
+  font-size: 1.20em;
+  color: #353538;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.bottomPageLogin .bluep {
+  font-size: 1.20em;
+  color: #ff7300;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.titleForm {
+  color: #217093;
+}
+
+a {
+  text-decoration: none;
+}
+
+.SignupPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex {
+  padding: 3vh;
+}
+
+.inputGroup2 {
+  position: relative;
+}
+
+.input__field {
+  padding-right: 40px;
+  /* Espacio para el ícono */
+}
+
+.input__icon__wrapper {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* Opcional: Estilos adicionales para el ícono */
+.input__icon__wrapper > svg {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 469px) {
+  .SignupPage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-width: 470px) and (max-width: 550px) {
+  .SignupPage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 768px) {
+  .SignupPage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=SingUp.css.map */

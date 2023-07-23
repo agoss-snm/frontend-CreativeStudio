@@ -18,7 +18,7 @@ const ElementDetailPage = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5005/api/elements/${id}`)
+      .get(`https://creativestudio3.fly.dev/api/elements/${id}`)
       .then((response) => {
         setElement(response.data);
         setRenderedCode(response.data.code);
@@ -31,7 +31,7 @@ const ElementDetailPage = () => {
   const handleDelete = () => {
     if (window.confirm("¿Estás seguro de que quieres eliminar este elemento?")) {
       axios
-        .delete(`http://localhost:5005/api/elements/${id}`)
+        .delete(`https://creativestudio3.fly.dev/api/elements/${id}`)
         .then(() => {
           navigate("/elements");
         })
@@ -41,7 +41,7 @@ const ElementDetailPage = () => {
 
   const handleAddToFavorites = () => {
     axios
-      .post(`http://localhost:5005/api/users/${user._id}/favorites`, { elementId: id })
+      .post(`https://creativestudio3.fly.dev/api/users/${user._id}/favorites`, { elementId: id })
       .then(() => {
         setIsFavorite(!isFavorite);
       })

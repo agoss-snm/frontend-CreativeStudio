@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { gsap } from "gsap"; // Importar gsap
 import './ElementsPage.css';
 
-const API_URL = "http://localhost:5005";
+const API_URL = "https://creativestudio3.fly.dev";
 
 function ElementsPage() {
   const [elements, setElements] = useState([]);

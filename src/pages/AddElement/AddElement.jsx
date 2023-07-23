@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import './AddElement.css'
-const API_URL = "http://localhost:5005";
+const API_URL = "https://creativestudio3.fly.dev/";
 
 
 function AddElement() {

@@ -13,7 +13,7 @@ function EditPage() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5005/api/elements/${id}/edit`)
+      .get(`https://creativestudio3.fly.dev/api/elements/${id}/edit`)
       .then((response) => {
         setElement(response.data);
         setEditedCode(response.data.code);
@@ -24,7 +24,7 @@ function EditPage() {
 
   const handleUpdate = () => {
     axios
-      .put(`http://localhost:5005/api/elements/${id}`, { code: editedCode })
+      .put(`https://creativestudio3.fly.dev/api/elements/${id}`, { code: editedCode })
       .then((response) => {
         console.log(response.data);
         navigate(`/elements/${id}`);

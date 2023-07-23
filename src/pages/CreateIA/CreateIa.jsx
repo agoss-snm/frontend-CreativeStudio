@@ -5,7 +5,7 @@ import "./CreateIa.css";
 import Spinner from "../../components/Spinner/Spinner";
 import { AuthContext } from '../../context/auth.context'
 
-const API_URL = "http://localhost:5005/api/chat";
+const API_URL = "https://creativestudio3.fly.dev/api/chat";
 
 function CreateIa({ isDarkMode }) {
   const [prompt, setPrompt] = useState("");
@@ -46,7 +46,7 @@ function CreateIa({ isDarkMode }) {
 
       axios
       .post(
-        "http://localhost:5005/api/elements",
+        "https://creativestudio3.fly.dev/api/elements",
         { title, code: response, userId: user._id }, // Pasar userId directamente en el cuerpo de la solicitud
         { headers: { Authorization: `Bearer ${authToken}` } }
       )

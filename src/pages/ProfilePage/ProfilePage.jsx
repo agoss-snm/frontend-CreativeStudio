@@ -28,7 +28,7 @@ function ProfilePage() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5005/api/users/${user._id}/favorites`)
+      .get(`https://creativestudio3.fly.dev/api/users/${user._id}/favorites`)
       .then((response) => {
         console.log(response);
         setFavorites(response.data);
@@ -38,7 +38,7 @@ function ProfilePage() {
       });
 
     axios
-      .get(`http://localhost:5005/api/elements?userId=${user._id}`)
+      .get(`https://creativestudio3.fly.dev/api/elements?userId=${user._id}`)
       .then((response) => {
         console.log(response);
         setCreations(response.data);
